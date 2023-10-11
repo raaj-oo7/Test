@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: 1s;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+   
+    background-color: #f4eded;
+    padding: 20px 0;
+    margin: auto;
+
+}
+.button{
+    width: 120px;
+    height: 120px;
+}
+.circle-red {
+    margin: 40px;
+    border-radius: 50%;
+    border-color: black;
+    cursor: pointer;
+}
+
+.circle-green {
+    margin: 40px;
+    border-radius: 50%;
+    border-color: black;
+    cursor: pointer;
+}
+
+.circle-blue {
+    margin: 40px;
+    border-radius: 50%;
+    border-color: black;
+    cursor: pointer;
+}
+
+.color-red:hover {
+    background-color: #1b0a0a;
+}
+
+.color-green:hover {
+    color: rgb(6, 93, 6);
+}
+
+.count-table {
+    position: absolute;
+}
+
+table,
+td {
+    border: 1px solid #000000;
+    height: 15px;
+    width: 250px;
+    background-color: #f0f0f0;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+}
+
+.lightRed {
+    background-color: #e06060;
+}
+
+.darkRed {
+    background-color: #ff0202;
+}
+
+.lightGreen {
+    background-color: #70df70;
+}
+
+.darkGreen {
+    background-color: #006400;
+}
+
+.lightBlue {
+    background-color: #add8e6;
+}
+
+.darkBlue {
+    background-color: blue;
+}
+
+@media only screen and (max-width:798px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        top: 60%;
+        width: 500px;
+        height: 400px;
+        padding: 10px;
+    }
+    .button{
+        height: 120px;
+        width: 120px;
+    }
+    table{
+        position: relative;
+    }
+
+    .circle-red {
+        margin: 30px;
+    }
+    .circle-green{
+        margin: 30px;
+    }
+    .circle-blue{
+        margin: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 60%;
+        margin: 0;
+        width: 200px;
+        height: 400px;
+       margin-top: -20px;
+    }
+
+    .button{
+        height: 80px;
+        width: 80px;
+    }
+    table{
+        position: relative;
+    }
+
+    .circle-red {
+        margin: 20px;
+    }
+    .circle-green{
+        margin: 20px;
+    }
+    .circle-blue{
+        margin: 20px;
+    }
+}
