@@ -1,14 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    transition: 1s;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 body {
     width: 100%;
     height: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container {
@@ -17,40 +16,25 @@ body {
     left: 50%;
     height: auto;
     transform: translate(-50%, -50%);
-    border: 1px solid black;
+    border: 1px solid #000000;
 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-   
+
     background-color: #f4eded;
     padding: 20px 0;
     margin: auto;
-
 }
-.button{
+
+.button {
     width: 120px;
     height: 120px;
-}
-.circle-red {
+    transition: cubic-bezier(0.81, 0.2, 0.41, 0.93);
     margin: 40px;
     border-radius: 50%;
-    border-color: black;
-    cursor: pointer;
-}
-
-.circle-green {
-    margin: 40px;
-    border-radius: 50%;
-    border-color: black;
-    cursor: pointer;
-}
-
-.circle-blue {
-    margin: 40px;
-    border-radius: 50%;
-    border-color: black;
+    border-color: #000000;
     cursor: pointer;
 }
 
@@ -59,7 +43,7 @@ body {
 }
 
 .color-green:hover {
-    color: rgb(6, 93, 6);
+    color: #065d06;
 }
 
 .count-table {
@@ -98,7 +82,7 @@ td {
 }
 
 .darkBlue {
-    background-color: blue;
+    background-color: #0000ff;
 }
 
 @media only screen and (max-width:798px) {
@@ -112,26 +96,18 @@ td {
         height: 400px;
         padding: 10px;
     }
-    .button{
+
+    .button {
         height: 120px;
         width: 120px;
     }
-    table{
-        position: relative;
-    }
 
-    .circle-red {
-        margin: 30px;
-    }
-    .circle-green{
-        margin: 30px;
-    }
-    .circle-blue{
-        margin: 30px;
+    table {
+        position: relative;
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
     .container {
         display: flex;
         flex-direction: column;
@@ -140,24 +116,19 @@ td {
         margin: 0;
         width: 200px;
         height: 400px;
-       margin-top: -20px;
+        margin-top: -20px;
     }
 
-    .button{
+    .button {
         height: 80px;
         width: 80px;
     }
-    table{
+
+    table {
         position: relative;
     }
 
-    .circle-red {
-        margin: 20px;
-    }
-    .circle-green{
-        margin: 20px;
-    }
-    .circle-blue{
+    .button {
         margin: 20px;
     }
 }
