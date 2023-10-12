@@ -22,6 +22,9 @@ redButton.addEventListener("click", () => {
     if (redClickCount % 2 === 1) {
         redButton.classList.remove("lightRed");
         redButton.classList.add("darkRed");
+        blueButton.classList.remove("darkBlue");
+        greenButton.classList.remove("darkGreen");
+
     } else {
         redButton.classList.remove("darkRed");
         redButton.classList.add("lightRed");
@@ -38,9 +41,13 @@ greenButton.addEventListener("click", () => {
     if (greenClickCount % 3 === 1) {
         redButton.classList.remove("darkRed");
         redButton.classList.add("darkRed");
+        blueButton.classList.remove("darkBlue");
+
     } else if (greenClickCount % 3 === 2) {
         redButton.classList.remove("darkRed");
         greenButton.classList.add("darkGreen");
+        redButton.classList.add("lightRed");
+
     } else {
         greenButton.classList.remove("darkGreen");
     }
@@ -55,9 +62,13 @@ blueButton.addEventListener("click", () => {
 
     if (blueClickCount % 4 === 1) {
         redButton.classList.add("darkRed");
+        greenButton.classList.remove("darkGreen");
+
     } else if (blueClickCount % 4 === 2) {
         redButton.classList.remove("darkRed");
         greenButton.classList.add("darkGreen");
+        redButton.classList.add("lightRed");
+
     } else if (blueClickCount % 4 === 3) {
         greenButton.classList.remove("darkGreen");
         blueButton.classList.add("darkBlue");
